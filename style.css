@@ -1,0 +1,42 @@
+/*
+Theme Name: Revised Twenty Seventeen
+Theme URI: https://github.com/markhowellsmead/wordpress.theme.twentyseventeen
+Description: A Child Theme for WordPress, which makes a few minor changes to the default Twenty Seventeen theme.
+Author: Mark Howells-Mead
+Author URI: https://www.markweb.ch/
+Version: 1.0
+Template: twentyseventeen
+Tags: one-column, two-columns, right-sidebar, flexible-header, accessibility-ready, custom-colors, custom-header, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, post-formats, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
+*/
+
+body,
+button,
+input,
+select,
+textarea {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+    font-size: 1rem;
+}
+
+@media screen and (min-width: 48em) {
+    .twentyseventeen-front-page.has-header-image .custom-header-media,
+    .twentyseventeen-front-page.has-header-video .custom-header-media,
+    .home.blog.has-header-image .custom-header-media,
+    .home.blog.has-header-video .custom-header-media {
+        height: 600px;
+        height: 50vh;
+    }
+
+    .admin-bar.twentyseventeen-front-page.has-header-image .custom-header-media,
+    .admin-bar.twentyseventeen-front-page.has-header-video .custom-header-media,
+    .admin-bar.home.blog.has-header-image .custom-header-media,
+    .admin-bar.home.blog.has-header-video .custom-header-media {
+        height: calc(50vh - 32px);
+    }
+
+    .panel-image {
+        height: 50vh;
+        max-height: 600px;
+    }
+
+}
